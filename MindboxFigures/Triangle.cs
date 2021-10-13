@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace MindboxFigures
 {
+    /// <summary>
+    /// 2-d triangle defined by 3 sides given at constructing. Immutable.
+    /// </summary>
     public class Triangle : GeometricFigure, IMeasurableAreaFigure
     {
         public Triangle(float side1, float side2, float side3)
@@ -43,6 +46,10 @@ namespace MindboxFigures
         }
         public float[] Sides { get; private set; }
         public bool IsSquareTriangle { get; private set; }
+
+        /// <summary>
+        /// Area of the figure calculated on construction. Will never change.
+        /// </summary>
         public float Area { get; private set; }
         public float Hypotenuse { get; private set; }
     }

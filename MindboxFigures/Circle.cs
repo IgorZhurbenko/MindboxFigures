@@ -2,6 +2,9 @@
 
 namespace MindboxFigures
 {
+    /// <summary>
+    /// Simple 2-d circle only differing from other by its radius. Immutable.
+    /// </summary>
     public class Circle : GeometricFigure, IMeasurableAreaFigure
     {
         public Circle(float radius)
@@ -11,6 +14,9 @@ namespace MindboxFigures
         }
         public float Radius { get; }
 
+        /// <summary>
+        /// Area of the figure calculated on construction. Will never change.
+        /// </summary>
         public float Area { get; }
     }
     
